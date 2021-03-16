@@ -1,14 +1,13 @@
 Blue Pill STM32-F103-C8 Rotary Encoder Test Circuit and Code
 * Ref: https://deepbluembedded.com/stm32-timer-encoder-mode-stm32-rotary-encoder-interfacing/
 
-
 Circuit Connections:
-Generic Rotary Encoder + Push Switch Module with integrated pull up 10k resistors
+Generic Rotary Encoder + Push Switch Module with integrated 10k pull up resistors
 ```
-* CLK ->
-* DT  ->
-* SW  -> 
-* +V  -> +3.3V 
+* PA0 -> CLK (10k PullUp)
+* PA1 -> DT  (10k PullUp)
+* PA2 -> SW  (10k PullUp)
+* 3V3 -> +V
 * GND -> GND
 ```
 * Set up timer2 to operate in encoder mode with 2 input channels (combined)
