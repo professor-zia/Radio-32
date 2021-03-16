@@ -6,5 +6,5 @@ Generic Rotary Encoder + Push Switch Module with integrated pull up 10k resistor
 * CLK ->
 * DT  ->
 * SW  -> 
-* +   -> +3.3V 
+* +V   -> +3.3V 
 * GND -> GND
