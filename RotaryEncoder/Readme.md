@@ -3,8 +3,8 @@ Ref: https://deepbluembedded.com/stm32-timer-encoder-mode-stm32-rotary-encoder-i
 Circuit Connections:
 Generic Rotary Encoder + Push Switch Module with integrated pull up 10k resistors
 
-CLK ->
-DT  ->
-SW  -> 
-+   -> +3.3V 
-GND -> GND
+* CLK ->
+* DT  ->
+* SW  -> 
+* +   -> +3.3V 
+* GND -> GND
