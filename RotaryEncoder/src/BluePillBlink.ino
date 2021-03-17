@@ -1,5 +1,5 @@
 /*
-  Blink.ino
+  BluePillBlink.ino
   STM32-F103-C8 Blue Pill Board
   Arduino IDE v1.8.13
   STM32 Cores by STMicroelectronics v1.9.0 / HAL/LL API
