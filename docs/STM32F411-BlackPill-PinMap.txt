@@ -1,0 +1,26 @@
+/*
+                     +-------------[USB-C]-------------+
+                     | [PB12]                    [ 5V] |
+                     | [PB13]   +-----------+    [GND] |
+                     | [PB14]   | STM32F411 |    [3V3] |
+                     | [PB15]   | BlackPill |   [PB10] |  
+                     | [PA 8]   +-----------+   [PB 2] |  
+                     | [PA 9]                   [PB 1] |  
+                     | [PA10]                   [PB 0] |
+            [USB D-] | [PA11]                   [PA 7] | [SPI1-MOSI]
+            [USB D+] | [PA12]                   [PA 6] | [SPI1-MISO]
+                     | [PA15]                   [PA 5] | [SPI1-SCK] 
+ [ENC-SW]----------- | [PB 3]                   [PA 4] | [SPI1-CS]
+ [ENC-CK]-[TIM3-CH1] | [PB 4]                   [PA 3] | [ADC-CH3] 
+ [ENC-DT]-[TIM3-CH2] | [PB 5]                   [PA 2] | [ADC-CH2]
+                     | [PB 6]                   [PA 1] | [ADC-CH1]
+                     | [PB 7]       [KEY]-------[PA 0] | [ADC-CH0]
+       [I2C1-SCL-AF] | [PB 8]  [PWR]     [C13]  [NRST] | [NRST]
+       [I2C1-SDA-AF] | [PB 9]  [LED]     [LED]  [PC15] | [OSC32-OUT]
+                     | [5V ]               |    [PC14] | [OSC32-IN]
+                     | [GND]               +----[PC13] | 
+                     | [3V3]                    [VBAT] | [VBAT]
+                     +-------------| | | |-------------+
+                          [3V3]----+ | | +----[GND]
+                          [SWDIO|PA13] [PA14|SWDCK]
+*/
