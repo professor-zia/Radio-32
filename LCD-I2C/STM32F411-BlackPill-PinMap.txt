@@ -1,1 +1,28 @@
+/*
+                     +-------------[USB-C]-------------+
+                     | [PB12]                    [ 5V] |
+                     | [PB13]   +-----------+    [GND] |
+                     | [PB14]   | STM32F411 |    [3V3] |
+                     | [PB15]   | BlackPill |   [PB10] | [I2C2-SCL]<<
+        >>[I2C3-SCL] | [PA 8]   +-----------+   [PB 2] |  
+                     | [PA 9]                   [PB 1] |  
+                     | [PA10]                   [PB 0] |
+            [USB D-] | [PA11]                   [PA 7] | [SPI1-MOSI]
+            [USB D+] | [PA12]                   [PA 6] | [SPI1-MISO]
+                     | [PA15]                   [PA 5] | [SPI1-SCK] 
+        >>[I2C2-SDA] | [PB 3]                   [PA 4] | [SPI1-CS]
+        >>[I2C3-SDA] | [PB 4]                   [PA 3] | [ADC-CH3] 
+                     | [PB 5]                   [PA 2] | [ADC-CH2]
+        >>[I2C1-SCL] | [PB 6]                   [PA 1] | [ADC-CH1]
+        >>[I2C1-SDA] | [PB 7]       [KEY]-------[PA 0] | [ADC-CH0]
+    >>[*AF-I2C1-SCL] | [PB 8]  [PWR]     [C13]  [NRST] | [NRST]
+    >>[*AF-I2C1-SDA] | [PB 9]  [LED]     [LED]  [PC15] | [OSC32-OUT]
+                     | [5V ]               |    [PC14] | [OSC32-IN]
+                     | [GND]               +----[PC13] | 
+                     | [3V3]                    [VBAT] | [VBAT]
+                     +-------------| | | |-------------+
+                          [3V3]----+ | | +----[GND]
+                          [SWDIO|PA13] [PA14|SWDCK]
 
+*AF: Alternate Pin Function
+*/
