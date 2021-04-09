@@ -1,10 +1,10 @@
-/*
+/*                     WeACT STM32F411CE on GVS shield
                      +-------------[USB-C]-------------+
                      | [PB12]                    [ 5V] |
                      | [PB13]   +-----------+    [GND] |
                      | [PB14]   | STM32F411 |    [3V3] |
                      | [PB15]   | BlackPill |   [PB10] | [I2C2-SCL]<<
-        >>[I2C3-SCL] | [PA 8]   +-----------+   [PB 2] |  
+        >>[I2C3-SCL] | [PA 8]   +-----------+   [PB 2]X|J[I2C2-SDA] Jumpered To [PB 3]
                      | [PA 9]                   [PB 1] |  
                      | [PA10]                   [PB 0] |
             [USB D-] | [PA11]                   [PA 7] | [SPI1-MOSI]
